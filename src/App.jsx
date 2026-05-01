@@ -143,7 +143,7 @@ export default function App() {
         <div style={{ paddingTop: 20, borderTop: '1px solid var(--border)', marginTop: 8 }}>
           <p style={{ fontSize: 11.5, color: '#A08070', lineHeight: 1.7 }}>
             Powered by{' '}
-            <span style={{ color: '#8B6355', fontWeight: 600 }}>Claude Sonnet</span><br />
+            <span style={{ color: '#8B6355', fontWeight: 600 }}>Groq · Llama 3.3</span><br />
             <span style={{ fontSize: 10.5 }}>Psychographic modeling · Empathy-first AI</span>
           </p>
         </div>
@@ -213,13 +213,14 @@ export default function App() {
             <div className="api-banner" style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 36 }}>
               <div style={{ fontSize: 26, flexShrink: 0 }}>⚡</div>
               <div>
-                <p style={{ fontSize: 14, fontWeight: 600, color: '#8B6318', marginBottom: 3, fontFamily: 'Playfair Display, serif' }}>Claude API Key Required</p>
+                <p style={{ fontSize: 14, fontWeight: 600, color: '#8B6318', marginBottom: 3, fontFamily: 'Playfair Display, serif' }}>Groq API Key Required</p>
                 <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
                   Add{' '}
-                  <code style={{ background: 'rgba(200,149,108,0.15)', padding: '2px 7px', borderRadius: 5, fontSize: 12, color: 'var(--espresso)' }}>VITE_ANTHROPIC_API_KEY=sk-ant-…</code>
+                  <code style={{ background: 'rgba(200,149,108,0.15)', padding: '2px 7px', borderRadius: 5, fontSize: 12, color: 'var(--espresso)' }}>VITE_GROQ_API_KEY=gsk_…</code>
                   {' '}to your{' '}
                   <code style={{ background: 'rgba(200,149,108,0.15)', padding: '2px 7px', borderRadius: 5, fontSize: 12, color: 'var(--espresso)' }}>.env</code>
-                  {' '}file and restart the dev server.
+                  {' '}file and restart. Free key at{' '}
+                  <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: 'var(--caramel)', fontWeight: 600 }}>console.groq.com</a>
                 </p>
               </div>
             </div>
